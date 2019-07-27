@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gome index</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="font_1012371_8ozqg3hlpah/iconfont.css" />
+		<link rel="stylesheet" href="common/commonCss/commonSideBar.css" />
+		<link rel="stylesheet" href="common/commonCss/commonHeader.css" />
+		<link rel="stylesheet" href="common/commonCss/commonFooter.css" />
+		<!--标题栏:--> 
+		<link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+		<!--收藏夹:--> 
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/headerjs.js"></script>
+		<script src="js/headerjq.js"></script>			
+	
+	</head>
+	<body>
+		<!--定义一个白色盒子，透明度0，fixed，top:0,left:0,当scrollTop > 200 的时候，透明度：0.7-->
+		<div id="topBox" class="t"></div>
+		<header class="t mw"></header>			
+		<!--侧边栏，“图片精灵”,,hover，css3动画-->
+		<ul id="imgSpiritUl"></ul> 		
+		<!--回到顶部,,JS 中-->			
+		<!--首页透明度轮播-->
+		<div id="opacityCarousel" class="t mw">	
+			<!--用来放一个空白盒子、轮播盒子以及新闻盒子，宽度为1200，居中-->
+			<div id="carouselNewsWrap" class="c2">
+				<!--左门-->
+				<section id="leftDoor">
+					<img src="img/index/opacitycarousel/leftdoor.jpg" />
+				</section>
+				<!--空白盒子，宽度200-->
+				<div id="nullBox"></div>
+				<!--轮播，宽度750-->
+				<div id="box">
+					<div id="before"></div>
+					<div id="next"></div>
+		
+					<ul id="picbox">
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc1.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc2.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc3.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc4.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc5.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc6.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc7.jpg" alt="" /></li>
+						<li class="bigPic"><img src="img/index/opacitycarousel/oc8.jpg" alt="" /></li>		
+					</ul>
+					<ul id="btnBox">
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+						<li class="picBtn"></li>
+					</ul>
+				<!--轮播结束-->
+				</div>	
+				<!--右边资讯盒子，宽度250-->
+				<section id="newsBox">
+					<div id="newstitle">
+						<p class="newstitleP" style="margin: 5px 0px;">
+							<span style="color: #333;font-size: 14px; font-weight: bold;">快讯</span>
+							<span><a href="#" id="gengduo">更多 ></a> </span>
+						</p>
+						<p class="newstitleP">
+							特惠 <a href="#" style="color: #f5004b;"> 家电钜惠 每满1000元减100元</a>
+						</p>
+						<p class="newstitleP">
+							特惠 <a href="#"> 年货有礼先行 平板低至999元</a>
+						</p>
+						<p class="newstitleP">
+							特惠 <a href="#"> 彩电年度狂欢 65英寸4K曲面2999</a>
+						</p>
+						
+						<p class="newstitleP">
+							特惠 <a href="#"> 食品生鲜年货节 部分买3免1</a>
+						</p>
+					</div>
+					<div id="newsicon">
+						<section class="newsiconSession">
+							<i class="iconfont icon-shouji"></i>
+							<p class="newsiconSessionP">充话费</p>
+						</section>
+						<section class="newsiconSession">
+							<i class="iconfont icon-chongliuliangtianchong"></i>
+							<p class="newsiconSessionP">充流量</p>
+						</section>
+						<section class="newsiconSession">
+							<i class="iconfont icon-94"></i>
+							<p class="newsiconSessionP">游戏</p>
+						</section>
+						<section class="newsiconSession">
+							<i class="iconfont icon-jinrong"></i>
+							<p class="newsiconSessionP">金融</p>
+						</section>
+						<section class="newsiconSession">
+							<i class="iconfont icon-bangzhu"></i>
+							<p class="newsiconSessionP">帮助</p>
+						</section>
+						<section class="newsiconSession">
+							<i class="iconfont icon-fuwu"></i>
+							<p class="newsiconSessionP">找服务</p>
+						</section>
+					</div>
+					<img src="img/index/opacitycarousel/food.jpg" id="newsImg"/>
+				<!--右边新闻资讯盒子结束-->	
+				</section>
+					<!--右门-->
+					<section id="rightDoor">
+						<img src="img/index/opacitycarousel/rightdoor.jpg" />
+					</section>
+			<!--用来放一个空白盒子、轮播盒子以及新闻盒子，宽度为1200，居中 结束-->
+			</div>
+			
+		<!--首页透明度轮播结束-->
+		</div>
+		
+		<!--淘实惠，逛新潮，购品牌 盒子-->
+		<div id="taoGuangGouWrap" class="t mw">		
+			<section class="c2"  id="taoGuangGouBox">
+				<!--淘实惠-->
+				<div id="tao" class="taoGuangGouSD">
+					<section class="taoGuangGouSDTop">
+						<span class="taoGuangGouSDTopSp1" id="tsp1"></span>
+						<span class="taoGuangGouSDTopSp2">BARGAINS</span>
+					</section>
+					<section class="taoGuangGouSDBtm">
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/t1.jpg" class="taoGuangGouSDBtmImg1"/><a href="">
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/t2.jpg" class="taoGuangGouSDBtmImg2"  style=" border-bottom: 1px dashed #e6e6e6;"/><a href="">
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/t3.jpg" class="taoGuangGouSDBtmImg3" /><a href="">
+					</section>
+				</div>
+				<!--逛新潮-->
+				<div id="guang" class="taoGuangGouSD">
+					<section class="taoGuangGouSDTop">
+						<span class="taoGuangGouSDTopSp1" id="tsp2"></span>
+						<span class="taoGuangGouSDTopSp2">FASHION</span>
+					</section>
+					<section class="taoGuangGouSDBtm">
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/q1.jpg" class="taoGuangGouSDBtmImg1"/></a>
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/q2.jpg" class="taoGuangGouSDBtmImg2"  style=" border-bottom: 1px dashed #e6e6e6;"/></a>
+						<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/q3.jpg" class="taoGuangGouSDBtmImg3" /></a>
+					</section>
+				</div>
+				<!--购品牌-->
+				<div id="gou" class="taoGuangGouSD3">
+					<section class="taoGuangGouSDTop3">
+						<span class="taoGuangGouSDTopSp1" id="tsp3"></span>
+						<span class="taoGuangGouSDTopSp2">BRANDS</span>
+					</section>
+					<section class="taoGuangGouSDBtm3">
+						<div id="taoGuangGouSDBtm3Left">
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p1.png" class="GouleftImg1"  style=" border-bottom: 1px dashed #e6e6e6;"/></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p2.jpg" class="GouleftImg1" /></a>
+						</div>
+						<div id="taoGuangGouSDBtm3Right">
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p3.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p4.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p5.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p6.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p7.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p8.jpg" class="GouleftImg2" /></a>
+							<a href="goodsList.html" target="_blank"><img src="img/index/taoshihui/p9.jpg" class="GouleftImg2" /></a>
+						</div>
+					</section>
+				</div>
+			</section>
+			
+		<!--淘实惠，逛新潮，购品牌 盒子 结束-->	
+		</div>
+		<!--领券中心-->
+		<section class="t mw" id="ticketBox">
+			<a href="goodsList.html" target="_blank">
+				<img src="img/index/ticket.png" class="c2" id="ticket"/>
+			</a>
+		</section>
+		
+		<!--金融-->
+		<div id="financeBoxWrap" class="t mw">
+			<section id="financeBox" class="c2">
+				<p id="financeBoxP">
+					<span id="financeBoxPsp1">金融</span>
+					<span id="financeBoxPsp2">FINANCE</span>
+				</p>
+				<div id="financeBoxDiv">
+					<section id="financeBoxDivS1">
+						<img src="img/index/finance/f1.jpg" />
+						<i id="financeBtn">金融频道 ></i>
+					</section>
+					<section id="financeBoxDivS2">
+						<img src="img/index/finance/f2.jpg" class="financeBoxDivS2Img" />
+						<img src="img/index/finance/f3.jpg" class="financeBoxDivS2Img" />
+						<img src="img/index/finance/f4.jpg" class="financeBoxDivS2Img" />
+						<img src="img/index/finance/f5.jpg" class="financeBoxDivS2Img" />
+					</section>
+				</div>
+			</section>			
+		</div>
+		
+		<!--猜你喜欢-->
+		<section id="uLikeWrap" class="t mw">
+			<div id="uLikeBox" class="c2">
+				<section class="ulPB">
+					<p id="uLikeBoxP">
+					<span class="caini">猜你喜欢</span>
+					<span class="youmay">YOU MAY LIKE</span>
+					</p>
+					<div id="uba">
+							<a id="uLikeBefore"> < </a>
+							<a id="uLikeAfter"> > </a>
+					</div>
+				</section>
+				
+				<section id="uLikeSection">
+					<!--动态创建三个ul，每个ul里面有6个li>a-->
+					<ul class="uLikeSectionUl" id="uLikeSectionUl1"></ul>
+					<ul class="uLikeSectionUl" id="uLikeSectionUl2"></ul>
+					<ul class="uLikeSectionUl" id="uLikeSectionUl3"></ul>
+				</section>
+			</div>			
+		</section>
+		
+		<!--1F 手机通讯-->
+		<section class="t mw shoujitongxunT">
+			<div class="c2 shouitongxunC">
+				<section clas="sjTop">
+					<span class="sjTitle">1F 手机通讯</span>
+					<ul class="sjUl">
+						<li class="sjLi" style="background-color:#50BFEC">精选热卖</li>
+						<li class="sjLi">时尚新品</li>
+						<li class="sjLi">二手优品</li>
+					</ul>
+				</section>
+				<section clas="sjBtm">
+					<img src="img/detail/sjBtmLeftImg.png" class="sjBtmLeftImg" />
+					<!--三个盒子定位在同一个地方，使它们叠在一起-->
+					<div class="sjBtmRightBox1">
+						<!--轮播-->
+						<section class="sjopacityWrap">
+							<div id="boxaa">
+								<div id="beforeaa"></div>
+								<div id="nextaa"></div>
+					
+								<ul id="picboxaaaa">
+									<li class="bigPicaa"><img src="img/detail/caro1.png" alt="" /></li>
+									<li class="bigPicaa"><img src="img/detail/caro2.png" alt="" /></li>
+									<li class="bigPicaa"><img src="img/detail/caro3.png" alt="" /></li>
+								</ul>
+								<ul id="btnboxaaaa">
+									<li class="picBtnaa"></li>
+									<li class="picBtnaa"></li>
+									<li class="picBtnaa"></li>									
+								</ul>								
+								<section id="flotImg">
+									<img src="img/detail/fl.png" />
+								</section>
+							</div>
+								
+						</section>
+							
+						
+						
+						<section class="sjBtmRightBox1ImgBox">
+							<img src="img/detail/a.png" />
+							<img src="img/detail/b.png" />
+							<img src="img/detail/c.png" />
+							<img src="img/detail/d.png" />
+							<img src="img/detail/e.png" />
+							<img src="img/detail/f.png" />
+						</section>
+					</div>
+					
+				</section>
+			</div>
+		</section>
+		
+		
+		
+		<!--热销榜-->
+		<div id="hotSoldWrap" class="t mw">
+			<section id="hotSoldSession" class="c2">
+				<div id="hotSoldLeft">
+					<p id="hotSoldLeftP">
+						<span class="rexiao">热销榜</span>
+						<span class="hot">HOT</span>
+					</p>
+					<section id="hotSoldLeftL">
+						<img src="img/index/hot/hot1.png"/>
+						<p class="hotSoldLeftLP1">24英寸电脑显示器台式ps4hdmi监控液晶显示屏幕ips(灰色 版本2)</p>
+						<p class="hotSoldLeftLP2">￥998.00</p>
+					</section>
+					<section id="hotSoldLeftR">
+						<span><img src="img/index/hot/hot2.png" alt="" /></span>
+						<span><img src="img/index/hot/hot3.png" alt="" /></span>
+						<span><img src="img/index/hot/hot4.png" alt="" /></span>
+						<span><img src="img/index/hot/hot5.png" alt="" /></span>
+					</section>
+				</div>
+				<div id="hotSoldRight">
+					<p id="hotSoldRightP">
+						<span class="rexiao">家电服务</span>
+						<span class="hot">SERVICE</span>
+						
+						<span id="qingxiweixiu">
+							<a href="" id="qingxi">家电清洗 /</a>
+							<a href="" id="weixiu">手机维修</a>
+						</span>
+					</p>
+					<section class="hotSoldRightS">
+						<img src="img/index/hot/hot6.png"/>
+					</section>
+					
+					<section class="hotSoldRightS">
+						<img src="img/index/hot/hot7.png"/>					
+					</section>
+				</div>
+			</section>
+		</div>
+		
+		<!--快递-->
+		<section class="t mw" id="kuaidiWrap">
+			<div class="c2" id="kuaidiBox">
+				<img src="img/index/kuaidi.png" id="kuaidiImg"/>
+				<div id="footerDiv">
+				<dl class="footerDl">
+					<dt class="footerDt">课程</dt>
+					<dd class="footerDd">麦田简介</dd>
+					<dd class="footerDd">品牌优势</dd>
+					<dd class="footerDd">关于我们</dd>
+					<dd class="footerDd">工作机会</dd>
+					<dd class="footerDd">直播公开课</dd>				
+				</dl>
+				
+				<dl class="footerDl">
+					<dt class="footerDt">实用外语</dt>
+					<dd class="footerDd">麦田简介</dd>
+					<dd class="footerDd">品牌优势</dd>
+					<dd class="footerDd">关于我们</dd>
+				
+				</dl>
+				<dl class="footerDl">
+					<dt class="footerDt">实用外语</dt>
+					<dd class="footerDd">麦田简介</dd>
+					<dd class="footerDd">品牌优势</dd>
+					<dd class="footerDd">关于我们</dd>
+				
+				</dl>
+				
+				<dl class="footerDl">
+					<dt class="footerDt">出国考试</dt>
+					<dd class="footerDd">麦田简介</dd>
+					<dd class="footerDd">品牌优势</dd>
+					<dd class="footerDd">关于我们</dd>
+					<dd class="footerDd">工作机会</dd>
+					<dd class="footerDd">直播公开课</dd>	
+					
+				</dl>
+				
+				<dl class="footerDl">
+					<dt class="footerDt">关于我们</dt>
+					<dd class="footerDd">麦田简介</dd>
+					<dd class="footerDd">品牌优势</dd>
+					<dd class="footerDd">关于我们</dd>
+					<dd class="footerDd">工作机会</dd>
+					<dd class="footerDd">直播公开课</dd>				
+				</dl>
+			
+			</div>
+			</div>			
+		</section>
+		<!--公共脚部-->
+		<footer class="t"></footer>
+		<!--锚点-->
+		<!--<ul id="indexMaodianUl">
+			<li class="indexMaodianLi"><a href="#shoujitongxun" class="indexMaodianA">1F手机通讯</a></li>
+			<li class="indexMaodianLi"><a href="#diannaoshuma" class="indexMaodianA">2F电脑数码</a></li>
+			<li class="indexMaodianLi"><a href="#jiayongdianqi" class="indexMaodianA">3F家用电器</a></li>
+			<li class="indexMaodianLi"><a href="#chufangweiyu" class="indexMaodianA">4F厨房卫浴</a></li>
+			<li class="indexMaodianLi"><a href="#guomeichaoshi" class="indexMaodianA">5F国美超市</a></li>
+		</ul>-->
+		
+		<!--引入首页JS-->
+		<script src="js/index.js"></script>	
+		<!--//			猜你喜欢动态创建 data-->
+		<script src="js/ulikedata.js"></script>			
+		<!--猜你喜欢动态创建-->
+		<script src="js/umayLikeCreateNode.js"></script>
+		<!--1F轮播脚本-->
+		<script src="js/indexfloorCarousel.js"></script>
+		<script>
+//			header，HTML引入
+			$('header').load("common/commonHtml/commonHeader.html");
+//			<!--侧边栏，“图片精灵”,,hover，css3动画 引入-->
+			$('#imgSpiritUl').load("common/commonHtml/commonSideBar.html");
+//		<!--公共脚部引入-->
+			$('footer').load("common/commonHtml/commonFooter.html");
+		</script>
+	</body>
+</html>

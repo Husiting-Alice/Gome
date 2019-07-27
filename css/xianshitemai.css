@@ -1,0 +1,306 @@
+/*回到顶部*/
+body{
+	background-color: #F8F8F8;
+}
+#goTop{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #D0D3D3;
+	color: white;
+	line-height: 50px;
+	text-align: center;
+	font-size: 38px;
+	font-weight: bold;
+	position: fixed;
+	top: 500px;
+	right: 20px;
+	display: none;
+}
+#goTop:hover{
+	background-color: #888;
+}
+
+/*导航*/
+#Mynav{
+	height: 120px;
+	margin-left: 80px;
+	background-color: white;
+	width: 500px;
+	/*background-color: yellow;*/
+	float: left;
+}
+.MynavLi{
+	height: 60px;
+	line-height: 60px;
+	margin-right: 10px;
+	margin-top: 30px;
+	padding: 0px 20px;
+	float: left;
+	
+	/*background-color: orange;*/
+}
+.MynavLi a{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+.MynavLi:hover{
+	border-bottom: 3px solid orangered;
+}
+/*大图*/
+#MyBigImgBox{
+	height: 400px;
+	background-color: darkred;
+}
+#MyBigImg{
+	height: 400px;
+	display: block;
+
+}
+
+/*大牌折扣*/
+#zheWrap{
+	margin-top: 50px;
+	height: 780px;
+}
+.Ifont{
+	display: block;
+	width: 1167px;
+	height: 55px;
+    line-height: 55px;
+    padding-left: 33px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #555;
+    text-indent: 25px;
+    text-align: center;
+	background: url(../img/xianshitemai/icon.png) no-repeat;
+}
+#Izhe{
+	background-position: 214px 0;	
+	    
+}
+.zheLeft{
+	width: 910px;
+	height: 710px;
+	float: left;
+}
+.zheLeftA{
+	width: 445px;
+	height: 345px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.zheLeftA img{
+	width: 445px;
+	height: 345px;
+}
+.zheRight{
+	width: 290px;
+	height: 710px;
+	float: left;
+}
+
+.zheRightPH{
+	padding-left: 35px;
+    width: 255px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 1px;
+    font-size: 14px;
+    display: block;
+    text-indent: 10px;
+    background: #f1f1f1 url(../img/xianshitemai/icon.png) no-repeat -734px -359px;
+}
+#zheRightUl{
+	width: 280px;
+	height: 650px;
+	padding: 5px;
+	background-color: white;
+}
+.zheRightLi{
+	width: 280px;
+	height: 107px;
+	border-bottom: 1px solid #D3D3D3;
+}
+.zheRightLiImg{
+	width: 80px;
+	height: 80px;
+	float: left;
+	display: block;
+	margin-top: 10px;
+}
+.zheRightLiDiv{
+	width: 180px;
+	margin-left: 20px;
+	float: left;
+}
+.zheRightLiDivI{
+	display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 6px;
+    width: 54px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+    font-family: arial;
+    background: url(../img/xianshitemai/icon.png) no-repeat 0 -367px;
+    color: #fff;
+}
+.zheRightLiDivP1{
+	font-size: 18px;
+    font-weight: 700;
+    color: #ee3b3b;
+}   
+.zheRightLiDivP2 {
+	display: block;
+    width: 165px;
+    height: 20px;
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 5px;
+} 
+
+/*特卖大牌*/
+#temaiWrap{
+	margin-top: 50px;
+	height: 270px;
+}
+#Ite{
+	background-position: 214px -135px;
+   
+}
+#temaiBox{
+	height: 270px;
+	
+}
+#temaiImgBox{
+	height: 202px;
+	width: 1200px;
+}
+.temaiImg{
+	margin-right: 1px;
+	margin-bottom: 1px;
+	width: 199px;
+	height: 100px;
+	float: left;
+	cursor: pointer;
+}
+.temaiImg:hover{
+	transform: scale(1.2);
+}
+/*99特惠*/
+#tehuiWrap{
+	height: 740px;
+	margin-top: 50px;
+}
+#Itehui{
+	background-position: 214px -199px;
+}
+#tehuiBox{
+	height: 740px;
+}
+#allTeHuiBox{
+	width: 1200px;
+	height: 660px;
+}
+.tehuiSBox{
+	width: 232px;
+	height: 320px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	background-color: white;
+	float: left;
+}
+.tehuiSImg{
+	width: 180px;
+	height: 180px;
+	display: block;
+	margin: 15px auto;
+}
+.tehuiBtm{
+	width: 100%;
+	height: 120px;
+}
+.tehuiBtmPrice{
+	width: 216px;
+	height: 33px;
+	color: #ee3b3b;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.tehuiBtmDesc{
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.tehuiBtmBuy{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #ff4c4c;
+	text-align: center;
+	margin-top: 20px;
+}
+.tehuiBtmBuy a{
+	color: white;
+	font-size: 18px;
+}
+
+/*热门推荐*/
+#remenWrap{
+	height: 320px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#remenBox{
+	height: 320px;
+}
+#Ire{
+	background-position: 214px -257px;
+}
+#allRemenBox{
+	width: 100%;
+	height: 250px;
+}
+.remenA{
+	width: 395px;
+	height: 250px;
+}
+/*锚点*/
+#maidianUl1{
+	width: 100px;
+	height: 204px;
+	/*background-color: #DD00A7;*/
+	position: fixed;
+	right: 0px;
+	top: 80px;
+	z-index: 5;
+	
+}
+.maodianLi1{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	background-color: #DD00A7;
+}
+.maodianLi1 a{
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}

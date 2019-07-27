@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login page</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="common/commonCss/commonFooter.css" />
+		<!--标题栏:--> 
+		<link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+		<!--收藏夹:--> 
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<style>
+			
+			#header{
+				height: 120px;
+			}
+			#logoBox{
+				height: 120px;				
+				position: relative;
+			}
+			#ideaP{
+				width: 127px;
+				height: 16px;
+				float: right;
+				margin-top: 90px;
+			}
+			.idea{
+				width: 18px;
+				height: 24px;
+				display: block;
+				background: url(img/login/idea.png) no-repeat;
+				background-size: 100% 100%;
+				float: left;
+			}
+			.logo{
+				width: 300px;
+				height: 62px;
+				position: absolute;
+				top: 23px;
+			}
+			#ideaP:link{
+				color: grey;
+			}
+			#ideaP:hover{
+				color: red;
+			}
+			#role{
+				background-color: #fff4e3;
+   				border-top: 1px solid #fee6bc;
+				height: 29px;
+				font: 400 12px/29px "Microsoft Yahei";
+				
+			}
+			#roleP{
+				height: 29px;
+				background-color: #fff4e3;
+    			color: #ff7f23;
+				line-height: 28px;
+				text-align: center;
+				position: relative;
+			}
+			#roleP em{
+				width: 16px;
+				height: 16px;
+				display: inline-block;				
+				/*float: left;*/
+				top: 8px;
+				left: 88px;
+				position: absolute;
+				background: url(img/login/login-bg-common.png)no-repeat;
+				background-position: -26px 0px;
+			}
+			#roleP a{				
+    			color: #2875cc;
+			}
+			#canterBox{
+				height: 480px;
+				background-color: yellow;
+				background: url(img/login/bg.jpg) top center  no-repeat;
+				background-size: cover;
+			}
+			.loginBOx{
+				width: 350px;
+				background-color: white;
+				float: right;
+				margin-top: 24px;
+				margin-right: 105px;
+				overflow: hidden;
+			}
+			#chooseP{
+				height: 54px;
+				width: 100%;
+				border-bottom: 1px solid lightgray;
+							
+			}
+			.chooseSpan{
+				height: 16px;
+				line-height: 16px;
+				display: block;
+				float: left;
+				text-align: center;
+				font-size: 18px;
+				color: #5e5e5e;
+				padding: 5px 0px;
+				margin-top: 13px;
+			}
+			#chooseSpan1{
+				width: 174px;
+				color: #e3101e;
+				text-decoration: none;
+				border-right: 1px solid lightgray;
+				
+			}
+			#chooseSpan2{
+				width: 175px;
+				color: #5e5e5e;
+				text-decoration: none;
+			}
+			#qrLogin{
+				width: 100%;
+								
+			}
+			#qrLogin img{
+				width: 153px;
+				height: 153px;
+				padding: 5px;
+				display: block;
+				margin: 20px auto;
+				border:1px solid lightgray;
+			}
+			#gm{
+				color: #e3101e;
+			}
+			.q{
+				width: 100%;
+				
+				text-align: center;
+			}
+			#q1{
+				height: 20px;
+			}
+			#q2{
+				height: 14px;
+			}
+			#reg{
+				width: 50px;
+				height: 18px;
+				display: block;
+				float: right;
+				margin-right: 20px;
+				margin-bottom: 10px;
+			}
+			
+			#accountLogin{
+				width: 100%;
+				display: none;				
+				
+			}
+			#accountLogin p{
+				width: 100%;
+			}
+			
+			#accountLogin p input{
+				width: 280px;
+				height: 30px;
+				padding: 5px;
+				border-radius: 2px;
+				border:1px solid #A5A5A5;
+			}
+			.username{
+				margin-top: 30px;
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+			.pwd{
+				margin-top: 14px;
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+			#iconBox{
+				width: 320px;
+				padding: 0px 5px;
+				height: 50px;
+				clear: both;
+				background-color: #fcfcfc;
+				color: #a5a5a5;
+				border: 1px solid #f0f0f0;
+				position: relative;
+			}
+			.icon{
+				width: 40px;
+				height: 40px;
+				margin: 5px 18px;
+				border: 1px solid darkgray;				
+				float: left;
+				border-radius: 50%;
+				
+			}
+			.iconImg{
+				width: 24px;
+				height: 24px;				
+				display: block;
+				margin: 5px auto;
+			}
+			.icon:hover{
+				transform: rotateY(180deg);
+				transition: all 0.4s linear; 
+				border: 1px solid #ff5757;	
+			}
+			.more{
+				width: 18px;
+				height: 18px;
+				background: url(img/login/login-bg-common.png) no-repeat;
+				background-position: 0px 0px;
+				position: absolute;
+				top: 15px;
+			}
+			#autoLoginSpan{
+				height: 40px;
+				width: 300px;
+				margin: 0 auto;
+				font-size: 12px;
+				line-height: 40px;
+				margin-left: 30px;
+			}
+			#loginP{
+				width: 300px;
+				height: 40px;
+				margin-left: 30px;
+				
+			}
+			#loginBtn{
+				width: 300px;
+				height: 42px;
+				background-color: #ff5757;
+				color: white;
+				color: #ffffff;
+				text-align: center;
+				outline: none;
+				border: none;
+				font-size: 18px;
+				line-height: 42px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<header id="header" class="t mw">
+			<div class="c" id="logoBox">
+				<img src="img/login/loginlogo.png" class="logo"/>
+				<a id="ideaP" href="#"><i class="idea"></i> &nbsp;&nbsp;我想对登录提意见</a>
+			</div>
+			
+		</header>
+		<div id="role" class="t mw">
+			<p class="c" id="roleP"><em></em>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版<a href="#">《国美隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+		</div>
+		<section id="canterBox" class="t mw">
+			<div class="c2">
+				<section class="loginBOx">
+					<p id="chooseP">
+						<a href="#" id="chooseSpan1" class="chooseSpan">扫码登录</a>
+						<a href="#" id="chooseSpan2" class="chooseSpan">账号登录</a>
+					
+					</p>
+					<div id="qrLogin">
+						<p id="qrCode">
+							<img src="img/login/qrCode.png" />
+						</p>
+						<p id="q1" class="q">打开手机 <a href="#" id="gm">国美</a></p>
+						<p id="q2" class="q">扫一扫登录</p>
+						<a href="regist.html" target="_blank" id="reg">免费注册</a>
+					</div>
+				
+					<div id="accountLogin">
+						<p>
+							<input type="text" placeholder="手机号码/用户名/邮箱" class="username"/>
+						</p>
+						<p>
+							<input type="password" placeholder="密码" class="pwd"/>
+						</p>
+						<p>
+							<span id="autoLoginSpan">
+								<input type="checkbox" style="width: 13px;height: 13px;"> 自动登录
+								<span style="float: right;margin-right: 20px;"><a href="">忘记密码</a> | <a href="regist.html" style="color: #2875cc;">免费注册</a></span>
+							</span>
+						</p>
+						<p id="loginP">
+							<button id="loginBtn">登录</button>
+						</p>
+						<p style="width: 300px;margin-left: 30px;line-height: 60px;display: block;height: 60px;">
+							<a href="" style="color: #2875cc;">手机号快速登录(支持门店预留手机)</a>
+						</p>
+					</div>
+					
+					<div id="iconBox">
+						<a href="" class="icon"><img src="img/login/QQ.png" alt="" class="iconImg" /></a>
+						<a href="" class="icon"><img src="img/login/wechat.png" alt="" class="iconImg" /></a>
+						<a href="" class="icon"><img src="img/login/microblog.png" alt="" class="iconImg" /></a>
+						<a href="" class="icon"><img src="img/login/member.png" alt="" class="iconImg" /></a>
+						<a href=""><em class="more"></em></a>
+					</div>
+				</section>	
+				<script>
+					window.onload = function(){
+						var oChooseSpan1 =  document.getElementById('chooseSpan1');
+						var oChooseSpan2 =  document.getElementById('chooseSpan2');
+						var oQrLogin = document.getElementById('qrLogin');
+						var oAccountLogin = document.getElementById('accountLogin');
+						oChooseSpan1.onclick = function(){
+							oChooseSpan1.style.color = '#e3101e';
+							oChooseSpan2.style.color = '#5e5e5e';
+							oQrLogin.style.display = 'block';
+							oAccountLogin.style.display = 'none';
+						}
+						oChooseSpan2.onclick = function(){
+							oChooseSpan2.style.color = '#e3101e';
+							oChooseSpan1.style.color = '#5e5e5e';
+							oAccountLogin.style.display = 'block';
+							oQrLogin.style.display = 'none';
+						}
+					}
+					
+					
+				</script>
+			</div>
+		</section>
+		<footer class="t mw">
+					
+		</footer>
+		<script>
+			$('footer').load("common/commonHtml/commonFooter.html");
+		</script>
+		<img src="img/login/mouseover1.gif" id="lamb" />
+		<!--1.监听鼠标移动事件
+		2.获取鼠标位置 clientX/Y
+		3.根据鼠标坐标改变图片位置-->
+		<script type="text/javascript">
+			$(function(){
+				$(document).mousemove(function(eve) {
+					//一开始光标所对应的是图片左上角，让光标指向图片中心，各减去一半
+					$('#lamb').css('left', eve.clientX+50);
+					$('#lamb').css('top', eve.clientY+50);
+				})
+			});				
+		</script>
+		
+		<!--//自动跳转页面-->
+		<!--<script type="text/javascript"> 
+			var x=5; //利用了全局变量来执行  
+			window.onload=function(){ 				
+				var que = window.confirm(x+'秒后跳转');
+				if(que){
+					setInterval(go, 1000);  
+				}
+				
+			
+			function go(){  
+				x--;  
+				if(x<=0){  
+					location.href='https://login.gome.com.cn/login?intcmp=sy-public01002';  
+				}
+			}
+		};
+		</script> -->
+
+	</body>
+</html>

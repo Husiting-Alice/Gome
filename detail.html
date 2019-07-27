@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>detail page</title>
+		<!--标题栏:--> 
+		<link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+		<!--收藏夹:--> 
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>		
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="common/commonCss/commonHeader.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<link rel="stylesheet" href="common/commonCss/commonFooter.css" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header></header>
+		<!--回到顶部-->		
+		<div id="goTop">^</div>
+		<div id="searchLineWrap" class="t mw" style="background-color: white;">
+			<section id="searchLineBox" class="c2">
+				<!--左边两张图片-->
+				<div id="searchLineImg">
+					<span id="logo"><img src="img/index/logo.png"/></span>
+					<span id="honor8X"><img src="img/index/honor8X.gif"/></span>
+				</div>
+				<!--文字导航-->
+				<div id="Mynav">					
+					<ul id="MynavUl">
+						<li class="MynavLi"><a href="index.html" target="_blank">首页</a></li>
+						<li class="MynavLi"><a href="xianshitemai.html" target="_blank">限时特卖</a></li>
+						<li class="MynavLi"><a href="goodsList.html" target="_blank">商品列表</a></li>
+						<li class="MynavLi" style="border-bottom: 3px solid orangered;"><a href="detail.html" target="_blank">详情</a></li>						
+					</ul>					
+				</div>
+				<span id="spCar"><a href=""><img src="img/detail/car.png" /> </a></span>
+			</section>
+		</div>
+		
+		<section class="t mw" id="jianengBigImgWrap">
+			<img src="img/detail/detailBigImg.png"  id="jianengBigImg"/>
+		</section>
+		
+		<!--导航条2-->
+		<div id="nav2Wrap" class="t mw">
+			<ul class="c2" id="nav2Ul">
+				<li class="nav2Li" style="margin-left: 80px;">单反相机</li>
+				<li class="nav2Li">微单</li>
+				<li class="nav2Li">数码相机</li>
+				<li class="nav2Li">镜头</li>
+				<li class="nav2Li">摄影课堂</li>
+			</ul>
+		</div>
+		
+		<!--导航条3-->
+		<div id="nav3Wrap" class="t mw">
+			<ul class="c2" id="nav3Ul">
+				<li class="nav3Li">数码 ></li>
+				<li class="nav3Li">摄影摄像></li>
+				<li class="nav3Li">单反相机 ></li>
+				<li class="nav3Li">佳能(canon) ></li>
+				<li class="nav3Li">佳能(canon)EO...</li>
+				<li class="nav3Li" id="jnRImg"></li>
+			</ul>
+		</div>
+		
+		<!--放大镜，价格信息-->
+		<section id="fwWrap" class="t mw">
+			<div id="fwC" class="c2">
+				<!--左边，放大镜-->
+				<section id="fwLeft">
+					<div id="father">
+						<img src="img/detail/fangdajing/b1.png" id="fatherImg"/>
+						<section id="son">
+							<img src="img/detail/fangdajing/b1.png" id="sonImg" />
+						</section>
+						<section id="square"></section>
+					</div>
+					<div id="btmWrap">
+						<span id="before" class="btn"><img src="img/detail/fangdajing/before.png" /> </span>
+						<section id="fwUlWrap">
+							<ul id="fwUl">
+								<li class="fwLi"><img src="img/detail/fangdajing/s1.png" alt="" class="fwLiImg"/></li>
+								<li class="fwLi"><img src="img/detail/fangdajing/s2.png" alt="" class="fwLiImg"/></li>
+								<li class="fwLi"><img src="img/detail/fangdajing/s3.png" alt="" class="fwLiImg"/></li>
+								<li class="fwLi"><img src="img/detail/fangdajing/s4.png" alt="" class="fwLiImg"/></li>
+								<li class="fwLi"><img src="img/detail/fangdajing/s5.png" alt="" class="fwLiImg"/></li>
+								<li class="fwLi"><img src="img/detail/fangdajing/s6.png" alt="" class="fwLiImg"/></li>
+							</ul>
+						</section>
+						<span id="after" class="btn"><img src="img/detail/fangdajing/after.png" /> </span>
+					</div>
+				</section>
+				<!--右边，价格信息-->
+				<section id="fwRight">
+					<h1 id="fwRightH1">佳能(Canon)EOS 800D(EF-S 18-55 IS STM) 单反套机 约2420万像素 DIGIC7处理器 支持Wi-Fi</h1>
+					<h4 id="fwRightH4">
+						约1800万像素 DIGIC7处理器 支持Wi-Fi
+						<a href=""> 【更多佳能产品请进入佳能官方旗舰店】 </a>
+					</h4>
+					<div id="daoJiShi">
+						<span style="float: left;">距离活动结束 </span>	<span id="hour" class="setTime">00</span><em class="dbDot">:</em>
+									<span id="minute" class="setTime">00</span><em class="dbDot">:</em>
+									<span id="second" class="setTime">00</span>
+					</div>
+					<span id="guomeijia"><img src="img/detail/fangdajing/guomeijia.png" /> </span>
+					<p id="tese">特色 <a href=""><img src="img/detail/fangdajing/tese.png" /> </a> </p>
+					<div id="songzhiBox">
+						<i id="songzhi">送至</i> 
+						<div id="addr">
+							广东省佛山市禅城区南庄镇 ...
+							<section id="addrDropDown">
+								
+							</section>
+						</div>
+					</div>
+				
+					<section id="buyCount">
+						<span id="num">1</span>
+						<div id="op">
+							<span id="add">+</span>
+							<span id="sub">-</span>
+						</div>
+						
+					</section>
+					<span id="addToCar">加入购物车</span>
+					<div id="phoneQr">
+						<i id="hovr">
+							<img src="img/detail/fangdajing/shoujixiadan.png" />
+						</i>
+						<i id="hovrShow">
+							<img src="img/detail/fangdajing/qrcode.png" />
+						</i>
+						
+					</div>
+					<p id="notice">温馨提示 1.正品保障； 2.不支持7天无理由退货</p>
+				</section>
+			</div>
+		</section>
+		
+		<div id="introWrap" class="t mw" style="margin-bottom: 34px; overflow: hidden;">
+			<section id="introC" class="c2">
+				<div id="introLeftBox">
+					<!--佳能自营旗舰店-->
+					<section id="ziyingBox">
+						<p id="ziyingP">
+							<a id="ziyingA">佳能自营旗舰店</a>
+							<i id="ziyingI"></i>
+						</p>
+						
+						<img src="img/detail/jianengziying.png" id="ziyingImg" />
+					
+						<p>
+							<span class="dianpu" id="jinru">进入店铺</span>
+							<span class="dianpu" id="shoucang">收藏店铺</span>
+						</p>						
+					</section>
+					<!--浏览最终购买-->
+					<div id="zuizhong">
+						<p id="zuizhongP">浏览最终购买</p>
+						<section id="zuizhongAllBox">
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥999.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1239.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥9659.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1599.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥2399.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1299.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥599.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥799.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥4499.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥2399.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1299.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥929.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥2399.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1299.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥929.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥2399.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1299.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥929.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/1.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥2399.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/2.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥1299.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							<div class="zuizhongSBox">								
+								<img src="img/detail/3.png" class="zuizhongSImg" />								
+								<p class="zuizhongSP1">￥929.00</p>
+								<p class="zuizhongSP2">佳能(Canon)EOS 6D Mark II(EF 24-70 f/4L IS USM) 约2620万像素 DIGIC7处理器 支持Wi-Fi</p>
+							</div>
+							
+						</section>
+						
+					</div>
+				</div>
+				<div id="introRightBox">
+					<ul id="navUl">
+						<li class="navLi"><a href="#xiangqing" class="navA">商品详情</a></li>
+						<li class="navLi"><a href="#pingjia" class="navA">商品评价</a></li>
+						<li class="navLi"><a href="#shouhou" class="navA">售后</a></li>
+					</ul>
+					<div id="xiangqing">
+						<img src="img/detail/xiangqing/1.png" style="height: 230px;" class="xiangqingImg"/>
+						<img src="img/detail/xiangqing/2.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/3.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/4.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/5.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/6.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/7.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/8.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/9.png" class="xiangqingImg" />
+						<img src="img/detail/xiangqing/10.png" class="xiangqingImg" />
+						
+					</div>
+					<div id="pingjia">
+						<img src="img/detail/pingjia/1.png" />
+						<img src="img/detail/pingjia/2.png" />
+						<img src="img/detail/pingjia/3.png" />
+						<img src="img/detail/pingjia/4.png" />
+						<img src="img/detail/pingjia/5.png" />
+						<img src="img/detail/pingjia/6.png" />
+					</div>
+					
+					<div id="shouhou">
+						<img src="img/detail/shouhou1.png" />
+						<img src="img/detail/shouhou2.png" />
+					</div>
+					
+				</div>
+			</section>
+		</div>
+		
+		<footer></footer>
+		
+		<script src="js/detail.js"></script>
+		<script>
+			$('header').load("common/commonHtml/comn2ndPageHead.html");
+			$('footer').load("common/commonHtml/commonFooter.html");
+		</script>	
+	</body>
+</html>

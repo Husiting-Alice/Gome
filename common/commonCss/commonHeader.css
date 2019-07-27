@@ -1,0 +1,707 @@
+/*顶部大图,点击关闭消失*/
+#topImgBox{
+	height: 80px;
+	background: rgb(184,4,7);
+}
+#topImg{
+	height: 80px;
+	background: url(../../img/index/topimg.jpg) top center no-repeat;
+	z-index: 0;
+	position: relative;
+}
+#close{
+	width: 12px;
+	height: 12px;
+	z-index: 4;
+	position: absolute;
+	right: 30px;
+	top: 6px;
+	background: url(../../img/common/ui.png) -60px -466px;
+	
+}
+#close:hover{
+	background: url(../../img/common/ui.png) -72px -466px;
+}
+/*第一个导航条*/
+#topNav{
+	height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    background: #f8f8f8;
+    color: #5e5e5e;
+    /*z-index: 999;*/
+}
+#topNalUl{
+	height: 30px;
+	font-size: 12px;
+}
+.topNavLi{
+	width: 80px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.topNavLi:hover{
+	color: #f5004b;
+}
+#myOrder{
+	margin-left: 450px;
+}
+.dropdown{
+	width: 7px;
+	height: 4px;
+	background: url(../../img/common/ui.png) no-repeat;
+	background-position: -62px -433px;
+	position: absolute;
+	top: 13px;
+	right: 5px;
+}
+#regisstGifts{
+	    color: #f5004b;
+}
+#gifts{
+	width: 12px;
+	height: 13px;
+	background: url(../../img/common/ui.png) no-repeat;
+	background-position: -145px -1496px;
+	position: absolute;
+	top: 7px;
+	right: 0px;
+}
+#serviceLi{
+	text-align: center;
+}
+#service{
+	width: 18px;
+	height: 19px;
+	background: url(../../img/common/ui.png) no-repeat;
+	background-position: 0px -515px;
+	position: absolute;
+	top: 6px;
+	left: 5px;
+}
+#phoneGome{
+	width: 16px;
+	height: 17px;
+	display: block;
+	float: left;
+	background: url(../../img/index/phone.png) no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 1px;
+}
+
+
+#gomeMembership:hover{
+	background-color: white;
+	/*height: 35px;*/
+	border-bottom:1px solid white;
+}
+#gomeMembership:hover .dropdown:nth-child(1){
+	/*水平/垂直*/
+	background-position: -60px -456px;
+} 
+
+/*hover下拉*/
+#membershipDropdownWrap{
+	width: 300px;
+	padding: 6px;
+	/*overflow: hidden;*/
+	border: 1px solid #f3f3f3;
+	background-color: white;
+	position: absolute;
+	z-index: 10;
+	display: none;
+	
+}
+#dropdownFlex{
+	width: 270px;
+	margin: 0 auto;
+	height: 200px;
+	
+}
+#dropdownAvactor{
+	width: 270px;
+	position: relative;
+	padding:10px 5px;
+    clear: both;
+    height: 60px;
+    border-bottom: 1px solid #f3f3f3;
+    
+}
+#avactor{
+	width: 55px;
+	height: 55px;
+	display: block;
+	background: url(../../img/common/ui.png) no-repeat;
+	background-position: 0px -337px;
+	vertical-align: middle;
+	position: absolute;
+	float: left;
+	left: 5px;
+	top: 12px;
+	border-radius: 50%;
+	/*vertical-align: middle;*/
+}
+#avactorLeft{
+	width: 130px;
+	position: absolute;
+	color: #888;
+	line-height: 55px;
+	float: left;
+	left: 60px;
+	text-align: left;
+	margin-left: 10px;
+}
+#avactorLeft a{
+	color: #069;
+} 
+#memb{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	clear: both;
+}
+.membi{
+	width: 60px;
+	height: 34px;
+	vertical-align: middle;
+	float: left;
+	color: #666;
+}
+.membspan{
+	width: 80px;
+	float: right;
+	
+}
+.membspan a{
+	color: #ccc;
+	cursor: pointer;
+}
+.membspan a:hover{
+	color: #f5004b;
+	text-decoration: none;
+}
+#membershipCarousel{
+	width: 270px;
+	position: relative;
+}
+#memberUlBox{
+	width: 200px;	
+	height: 70px;
+	overflow: hidden;
+	position: absolute;
+	left: 35px;
+	top: 0px;
+}
+#membCarouUl{
+	width: 490px;
+	height: 70px;
+	margin: 0 auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	
+	
+}
+.membCarouLi{
+	width: 60px;
+	height: 70px;
+	float: left;
+	position: relative;
+	margin-right: 10px;
+}
+
+.membCarouLi p:nth-child(1){
+	width: 60px;
+	height: 50px;
+}
+.membCarouLi p i{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	/*background: url(../img/common/ui.png) no-repeat;*/
+	position: absolute;
+	top: 0px;
+	left: 5px;
+}
+.membCarouP{
+	width: 60px;
+	height: 19px;
+	position: absolute;
+	line-height: 19px;
+	text-align: center;
+	color: #888;
+	
+}
+
+
+#memberCarouselLast,#memberCarouselNext{
+	width: 35px;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	font-size: 35px;
+	line-height: 70px;
+	color: #d3d5d6;
+}
+#memberCarouselLast{
+	left: 0px;
+}
+#memberCarouselNext{
+	right: 0px;
+}
+/*有搜索栏、购物车那一行*/
+/*左边两张图片*/
+#searchLineWrap{
+	height:120px;
+}
+#searchLineBox{
+	height: 120px;
+}
+#searchLineImg{
+	float: left;
+	width: 250px;
+	height: 56px;
+	margin-top: 32px;
+}
+#logo{
+	width: 125px;
+	height: 56px;
+	display: block;
+	float: left;
+}
+#honor8X{
+	width: 100px;
+	height: 50px;
+	display: block;
+	float: left;
+	margin-left: 24px;
+	margin-top: 3px;
+}
+/*中间搜索框*/
+#searchAndLins{
+	width: 500px;
+	float: left;
+	height: 60px;
+	color: #A5A5A5;
+	margin-left: 130px;
+	margin-top: 30px;
+}
+#searchUl{
+	width: 500px;
+	height: 16px;
+	clear: both;
+	z-index: 1;
+}
+.searchLi{
+	float: left;
+	padding: 1px 4px;
+}
+.searchLi:hover{
+	color: #f5004b;
+}
+#searchDropdown{
+	width: 56px;
+	float: left;
+	margin-bottom: 5px;
+	position: relative;
+}
+#sp{
+	width: 56px;
+	border: 1px solid #dd00a7;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background-color: white;
+	float: left;
+}
+#spSpan{
+	display: block;
+	float: left;
+	background-color: white;
+	color: #888;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0px 5px;
+}
+#spDiv{
+	position: absolute;
+    width: 11px;
+    height: 7px;
+    left: 40px;
+    top: 11px;
+    background: url(../../img/common/ui.png) -145px -1469px;
+    
+}
+#spUl{
+	width: 56px;
+	height: 96px;
+	border: 1px solid #dd00a7;
+	background-color: white;
+	z-index: 5;
+	display: block;
+	position: absolute;
+	top: 31px;
+	display: none;
+}
+#searchDropdown:hover #spUl{
+	display: block;
+}
+.spLi{
+	width: 51px;
+	height: 24px;
+	text-align: left;
+	padding-left: 5px;
+	font-size: 14px;
+	
+}
+.spLi:hover{
+	background-color: #d3d5d6;
+}
+#inpBox{
+	float: left;
+}
+#inp{
+	border: 1px solid #dd00a7;
+	width: 300px;
+	height: 30px;
+	float: left;
+	border-left: none;
+	border-right: none;
+	padding-left: 5px;
+	outline: none;
+}
+#yuyin{
+	width: 18px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid #dd00a7;
+	border-left: none;
+	float: left;
+}
+#searchBtn{
+	width: 90px;
+	height: 32px;
+	border: 1px solid #dd00a7;
+	background: #dd00a7;
+	font-size: 16px;
+	color: white;
+}
+
+/*右边购物车*/
+#shoppingCarBox{
+	width: 140px;
+	height: 34px;
+	line-height: 34px;
+	float: right;
+	margin-top: 43px;
+	padding: 5px 10px;
+	background-color: white;
+	position: relative;
+	color: #A5A5A5;
+	z-index: 10;
+}
+
+#CarBox i{
+	vertical-align: middle;
+}
+#mycar{
+	font-size: 14px;
+	vertical-align: middle;
+}
+#goodsCount{
+	width: 18px;
+	height: 16px;
+	position: absolute;
+	display: block;
+	top: -15px;
+	left: 25px;
+	z-index: 2;
+}
+#carDispOrShow{
+	width: 210px;
+	padding: 30px;
+	position: absolute;
+	top: 44px;
+	right: 0;
+	text-align: center;	
+	display: none;
+}
+#carDispOrShow a:hover{
+	text-decoration: underline;
+	color: #333;
+}
+
+#shoppingCarBox:hover{
+	box-shadow: 1px 1px 12px #D3D5D6, -1px -1px 12px #D3D5D6, 1px -1px 12px #D3D5D6, -1px 1px 12px #D3D5D6;
+}
+#shoppingCarBox:hover #CarBox{
+	width: 160px;
+	height: 44px;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*background-color: red;*/
+	text-align: center;
+	line-height: 44px;
+}
+#shoppingCarBox:hover #carDispOrShow{
+	display: block;
+	z-index: -1;
+	background-color: white;
+	box-shadow: 1px 1px 12px #D3D5D6, -1px -1px 12px #D3D5D6, 1px -1px 12px #D3D5D6, -1px 1px 12px #D3D5D6;
+	
+}
+
+/*中间导航条*/
+nav{
+	height: 39px;
+	border-bottom: 1px solid #dd00a7;
+    background: #f8f8f8;
+}
+#navAll{
+	height: 39px;
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+
+/*全部商品*/
+#navDropdownBox{
+	width: 200px;
+	height: 39px;
+	line-height: 39px;
+	float: left;
+	background-color: #f1f1f1;
+}
+#more{
+	display: none;
+}
+#al{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+/*全部商品下拉开始*/
+#dropdpwnUl{
+	width:200px;
+	height: 450px;
+	background-color: #5c5c5c;
+	position: relative;
+	/*position: absolute;*/
+	/*z-index: 6;*/
+	margin-top: -1px;
+}
+.dropdpwnLi{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	
+}
+.dropdpwnLi:hover{
+	background-color: #ffffff;
+}
+.dropdpwnLi:hover .dropdpwnIA{
+	color: #333;
+}
+.dropdpwnLi:hover .dropdpwnIA:hover{
+	color: #F5004B;
+	text-decoration: none;
+}
+.dropdpwnI{
+	width: 170px;
+	padding-left: 15px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}
+.dropdpwnIA{
+	color: #fff;
+	font-size: 14px;
+    font-family: 'Microsoft YaHei',arial;
+    font-weight: 200;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: left;
+}
+
+.hoverDisplay{
+	width: 980px;
+	height: 430px;
+	position: absolute;
+	background-color: white;
+	top: 0px;
+	left: 200px;
+	padding: 10px;
+	z-index: 6;
+	display: none;
+}
+/*鼠标放在li上,显示*/
+.dropdpwnLi:hover .hoverDisplay{
+	display: block;
+}
+#hLeft{
+	width: 750px;
+	height: 430px;
+	float: left;
+}
+
+#leftTop{
+	width: 750px;
+	height: 40px;
+	line-height: 40px;
+}
+.leftTopSpan{
+	width: 84px;
+	height: 20px;
+	background-color: #F5004B;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	margin-top: 8px;
+	padding-bottom: 5px;
+}
+.leftTopSpan:hover{
+	background-color: red;
+}
+#leftBottom{
+	width: 750px;
+	height: 390px;
+}
+.leftBottomSession{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #D3D3D3;
+	width: 750px;
+	height: 60px;
+	background-color: white;;
+}
+.leftBottomSessionL{
+	width: 50px;
+	padding: 10px;
+	height: 40px;
+	float: left;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+}
+.leftBottomSessionR{
+	width: 680px;
+	height: 60px;
+	float: right;
+	
+}
+.leftBottomSessionSpan{
+	display: block;
+	float: left;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-left: 1px solid #D3D3D3;
+	
+}
+
+
+.leftBottomSessionA{
+	color: #666;
+	font-size: 12px;
+}
+.leftBottomSessionA:hover{
+	color: #f5004b;
+	text-decoration: none;
+}
+
+
+#hRight{
+	width: 220px;
+	height: 430px;
+	float: left;
+
+}
+#rightTop{
+	width: 220px;
+	height: 200px;
+}
+.rightTopA{
+	display: block;
+	float: left;
+	width: 80px;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+.rightTopAImg{
+	width: 90px;
+	height: 40px;
+}
+#rightBottom{
+	width: 220px;
+	height: 220px;
+	float: right;
+	margin-top: 9px;
+}
+#rightBottomImg{
+	width: 220px;
+	height: 220px;
+}
+
+
+
+
+/*<!--导航中间水平列表部分-->*/
+#navUl{
+	width: 800px;
+	height: 39px;
+	float: left;
+	background-color: #f8f8f8;
+}
+.navLi{
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	padding: 0px 10px;
+	font-size: 16px;
+}
+.navLi:hover{
+	color:  #f5004b;
+}
+#navCBox{
+	width: 170px;
+	height: 39px;
+	overflow: hidden;
+	position: relative;
+}
+#navCUl{
+	width: 170px;
+	height: 117px;
+	position: absolute;
+	top: 0px;
+	height: 0px;
+}
+.navCLi{
+	width: 170px;
+	height: 39px;
+}
+#topBox{
+	height: 50px;
+	position: absolute;
+	background: rgba(255,255,255,0);
+	display: none;
+	/*background: rgba(255,255,255,0.7);*/
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+}
