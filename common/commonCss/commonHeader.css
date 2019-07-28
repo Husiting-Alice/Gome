@@ -437,7 +437,7 @@
 }
 
 #shoppingCarBox:hover{
-	box-shadow: 1px 1px 12px #D3D5D6, -1px -1px 12px #D3D5D6, 1px -1px 12px #D3D5D6, -1px 1px 12px #D3D5D6;
+	box-shadow: 1px 1px 2px #D3D5D6, -1px -1px 2px #D3D5D6, 1px -1px 2px #D3D5D6, -1px 1px 2px #D3D5D6;
 }
 #shoppingCarBox:hover #CarBox{
 	width: 160px;
@@ -446,7 +446,6 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	/*background-color: red;*/
 	text-align: center;
 	line-height: 44px;
 }
@@ -454,7 +453,7 @@
 	display: block;
 	z-index: -1;
 	background-color: white;
-	box-shadow: 1px 1px 12px #D3D5D6, -1px -1px 12px #D3D5D6, 1px -1px 12px #D3D5D6, -1px 1px 12px #D3D5D6;
+	box-shadow: 1px 1px 2px #D3D5D6, -1px -1px 2px #D3D5D6, 1px -1px 2px #D3D5D6, -1px 1px 2px #D3D5D6;
 	
 }
 

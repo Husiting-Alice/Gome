@@ -67,71 +67,74 @@ window.onload = function(){
 			}
 //			透明度轮播
 			var oPicBtn = document.getElementsByClassName('picBtn');
-				var oBigPic = document.getElementsByClassName('bigPic');
-				var oBefore = document.getElementById('before');
-				var oNext = document.getElementById('next');
-				slider()
-				function slider(){
-					
-					inter ( );
-					
-					var iNow = 0;
-					var timer;
-					
-					for(var i = 0;i<oPicBtn.length;i++){
-						bind(i)
-					}
-					
-					function bind(index){
-						oPicBtn[index].onmouseover = function(){
-//							alert(index)
-							clearInterval(timer);
-							iNow = index;
-//							console.log('dianji'+index )
-							changePic( index )
-							inter()
-						}
-					}
-					
-					function changePic ( index ){						
-						for(var j = 0;j<oBigPic.length;j++){
-							oBigPic[j].style.opacity = 0;
-							if (j==index) {
-								oBigPic[index].style.opacity = 1;
-//								opicBtns[index].style.bgColor = 'deeppink';
-							}
-						}
-					}
-					//定时器 
-					function inter ( ){						
-						timer = setInterval(function(){
-							iNow++;
-//							console.log('zidong'+iNow)
-							if( iNow>7 ){
-								iNow = 0
-							}
-							changePic ( iNow )
-						},2000)
-					}
-					//向前
-					oBefore.onclick = function(){
-						clearInterval(timer);
-						iNow -- ;
-						if(iNow<0){
-							iNow = oBigPic.length-1;
-						}
-						changePic( iNow );
-						inter();
-					}
-					//向后
-					oNext.onclick = function(){
-						clearInterval(timer);
-						iNow ++ ;
-						if(iNow>oBigPic.length-1){
-							iNow = 0;
-						}
-						changePic( iNow );
-						inter();
-					}					
+			var oBigPic = document.getElementsByClassName('bigPic');
+			var oBefore = document.getElementById('before');
+			var oNext = document.getElementById('next');
+			slider()
+			function slider(){
+				
+				inter ( );
+				
+				var iNow = 0;
+				var timer;
+				
+				for(var i = 0;i<oPicBtn.length;i++){
+					bind(i)
 				}
+				
+				function bind(index){
+					oPicBtn[index].onmouseover = function(){
+//							alert(index)
+						clearInterval(timer);
+						iNow = index;
+//							console.log('dianji'+index )
+						changePic( index )
+						inter()
+					}
+				}
+				
+				function changePic ( index ){						
+					for(var j = 0;j<oBigPic.length;j++){
+						oBigPic[j].style.opacity = 0;
+						if (j==index) {
+							oBigPic[index].style.opacity = 1;
+							for(var ii=0;ii<opicBtns.length;ii++){
+								opicBtns[ii].style.backgroundColor = 'rgba(0,0,0,0.5)';
+							}
+							opicBtns[index].style.backgroundColor = 'deeppink';
+						}
+					}
+				}
+				//定时器 
+				function inter ( ){						
+					timer = setInterval(function(){
+						iNow++;
+//							console.log('zidong'+iNow)
+						if( iNow>7 ){
+							iNow = 0
+						}
+						changePic ( iNow )
+					},2000)
+				}
+				//向前
+				oBefore.onclick = function(){
+					clearInterval(timer);
+					iNow -- ;
+					if(iNow<0){
+						iNow = oBigPic.length-1;
+					}
+					changePic( iNow );
+					inter();
+				}
+				//向后
+				oNext.onclick = function(){
+					clearInterval(timer);
+					iNow ++ ;
+					if(iNow>oBigPic.length-1){
+						iNow = 0;
+					}
+					changePic( iNow );
+					inter();
+				}					
+			}
 }

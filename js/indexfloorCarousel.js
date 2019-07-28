@@ -40,7 +40,7 @@ function slider(){
 	function inter ( ){						
 		timer = setInterval(function(){
 			iNow++;
-			console.log('zidong'+iNow)
+//			console.log('zidong'+iNow)
 			if( iNow>2 ){
 				iNow = 0
 			}

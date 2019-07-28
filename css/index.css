@@ -1,7 +1,9 @@
+a{
+	text-decoration: none!important;
+}
 /*用来放一个空白盒子、轮播盒子以及新闻盒子，宽度为1200，居中*/
 #carouselNewsWrap{
 	height: 450px;
-	/*background-color: pink;*/
 	position: relative;
 	
 }
@@ -9,7 +11,6 @@
 	width: 200px;
 	height: 450px;
 	float: left;
-	/*background-color: red;*/
 }
 
 #leftDoor,#rightDoor{
@@ -64,7 +65,6 @@
 	position: absolute;
 	top: 90%;
 	left: 250px;
-	/*background: pink;*/
 	margin-top: 6px;
 	display: flex;
 	display: -webkit-flex;
@@ -74,11 +74,13 @@
 .picBtn {
 	width: 30px;
 	height: 5px;
-	/*float: left;*/
 	background: rgba(0,0,0,0.5);
 	cursor: pointer;
 }
 .picBtn:hover{
+	background:deeppink;
+}
+.picBtn:nth-of-type(1){
 	background:deeppink;
 }
 

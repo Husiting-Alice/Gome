@@ -44,19 +44,27 @@ $(function(){
 		}
 	});
 //	nav导航栏右侧向上滚动"水平（竖直）"轮播		
-	var top = 0;
-	setInterval(function(){							
-		if(top == -78){
-			top = 39;
-			$('#navCUl').css('transition','');
-			
-		}else{
-			
-			$('#navCUl').css('transition','top 0.5s linear');
-		
+//	var top = 0;
+	var num = 0;
+	setInterval(function(){	
+		num++;
+		if(num>3){
+			num=0;
+			$('#navCUl').css({'top':-39*num+'px'});
+			num=1;
 		}
-		top = top-39;
-			$('#navCUl').css('top',top+'px');
+		$('#navCUl').animate({'top':-39*num+'px'})
+//		if(top <= -78){
+//			top = 39;
+//			$('#navCUl').css('transition','');
+//			
+//		}else{
+//			
+//			$('#navCUl').css('transition','top 0.5s linear');
+//		
+//		}
+//		top = top-39;
+//		$('#navCUl').css('top',top+'px');
 		
 	},1000);
 	

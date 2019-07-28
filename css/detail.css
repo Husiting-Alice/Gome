@@ -368,6 +368,7 @@
 	line-height: 40px;
 	margin-left: 20px;
 	margin-top: 30px;
+	cursor: pointer;
 }
 #phoneQr{
 	width: 104px;
